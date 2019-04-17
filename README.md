@@ -10,4 +10,6 @@ To create an exportable 3rd party library:
 
 3. Add the line `export * from './router';` to `lib-esm/vanilla.js`.
 
-4. Run `npm run bundle` to create bundled vanilla js files in the `_bundles` directory.
+4. Point the Rollup bundler to the vanilla js entry point in line 34 of `rollup.config.js` change `lib-esm/index.js` to `lib-esm/vanilla.js`.
+
+5. Run `npm run bundle` to create bundled vanilla js files in the `_bundles` directory.
