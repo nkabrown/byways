@@ -4,8 +4,10 @@ First approach to building a vanilla JS UI-Router for client-side routing in mod
 
 To create an exportable 3rd party library:
 
-1. In `https://github.com/ui-router/core` run `npm run compile`.
+1. Clone from `https://github.com/ui-router/core`.
 
-2. Add the line `export * from './router';` to `lib-esm/vanilla.js`.
+2. In the root directory run `npm run compile`.
 
-3. Run `npm run bundle` to create bundled vanilla js files in the `_bundles` directory. 
+3. Add the line `export * from './router';` to `lib-esm/vanilla.js`.
+
+4. Run `npm run bundle` to create bundled vanilla js files in the `_bundles` directory.
